@@ -1,9 +1,11 @@
 
-def convert_km(milhas  ):
-   quilometro =  0.6214 * milhas 
-   return quilometro
+# função para converter metro para quilometro
+def convert_metro_para_km(metro):
+   return metro / 1000
 
-def convert_milhas(km ):
-   milhas1  = 1.6093 * km
 
-   return milhas1
+# funcao para converter quilometro para metro
+def convert_quilometro_para_metro(quilometro):
+   return quilometro * 1000
+
+
