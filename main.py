@@ -1,4 +1,4 @@
-import Massa, volume, comprimento, velocidade
+import massa, volume, comprimento, velocidade
 
 def main():
     """
@@ -38,12 +38,12 @@ def main():
 
         elif escolha == "3":
             gramas = float(input("Digite o valor em gramas: "))
-            quilogramas = Massa.converte_gr_pra_kg(gramas)
+            quilogramas = massa.converte_gr_pra_kg(gramas)
             print(f"{gramas} gramas são {quilogramas} quilogramas.")
            
         elif escolha == "4":
             quilogramas = float(input("Digite o valor em quilogramas: "))
-            gramas = Massa.converte_kg_pra_gr(quilogramas)
+            gramas = massa.converte_kg_pra_gr(quilogramas)
             print(f"{quilogramas} quilogramas são {gramas} gramas.")
 
         elif escolha == "5":
