@@ -1,3 +1,5 @@
+import Massa, volume, comprimento, velocidade
+
 def main():
     """
     Função principal do programa.
@@ -26,42 +28,42 @@ def main():
 
         if escolha == "1":
             metros = float(input("Digite o valor em metros: "))
-            quilometros = None
+            quilometros = comprimento.convert_metro_para_km(metros)
             print(f"{metros} metros são {quilometros} quilômetros.")
             
         elif escolha == "2":
             quilometros = float(input("Digite o valor em quilômetros: "))
-            metros = None
+            metros = comprimento.convert_quilometro_para_metro(quilometros)
             print(f"{quilometros} quilômetros são {metros} metros.")
 
         elif escolha == "3":
             gramas = float(input("Digite o valor em gramas: "))
-            quilogramas = None
+            quilogramas = Massa.converte_gr_pra_kg(gramas)
             print(f"{gramas} gramas são {quilogramas} quilogramas.")
            
         elif escolha == "4":
             quilogramas = float(input("Digite o valor em quilogramas: "))
-            gramas = None
+            gramas = Massa.converte_kg_pra_gr(quilogramas)
             print(f"{quilogramas} quilogramas são {gramas} gramas.")
 
         elif escolha == "5":
             litros = float(input("Digite o valor em litros: "))
-            mililitros = None
+            mililitros = volume.litros_para_ml(litros)
             print(f"{litros} litros são {mililitros} mililitros.")
 
         elif escolha == "6":
             mililitros = float(input("Digite o valor em mililitros: "))
-            litros = None
+            litros = volume.ml_para_litros(mililitros)
             print(f"{mililitros} mililitros são {litros} litros.")
 
         elif escolha == "7":
             kmph = float(input("Digite o valor em km/h: "))
-            mps = None
+            mps = velocidade.conversor_kmph_para_mps(kmph)
             print(f"{kmph} km/h são {mps} m/s.")
 
         elif escolha == "8":
             mps = float(input("Digite o valor em m/s: "))
-            kmph = None
+            kmph = velocidade.conversor_mps_para_kmph(mps)
             print(f"{mps} m/s são {kmph} km/h.")
 
         else:
